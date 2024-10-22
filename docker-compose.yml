@@ -1,0 +1,9 @@
+services:
+  fluent:
+    image: fluent-ffmpeg-docker:local
+    build:
+      context: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/app
